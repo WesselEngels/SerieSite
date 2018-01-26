@@ -1,0 +1,356 @@
+@font-face {
+  font-family: 'neuropolitical';
+  src: url('../fonts/neuropoliticalrg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'neuropolitical';
+}
+
+#container {
+  height: 83vh;
+  background-image: url(../img/space.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header {
+  background-color: black;
+  width: 100vw;
+}
+
+#header img {
+  height: 120px;
+  width: 151px;
+}
+
+.mySlides {
+  position: relative;
+  height: 155px;
+  width: 273px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.mySlides:hover {
+  transform: scale(1.1);
+}
+
+.serie-name {
+  position: relative;
+}
+
+.total-char {
+  position: absolute;
+  top: 143px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  right: 21px;
+}
+
+#series {
+  color: white;
+  height: 80vh;
+  width: 20%;
+  float: left;
+  overflow-y: scroll;
+}
+
+.serie-info {
+  position: relative;
+  z-index: 1;
+}
+
+#characters {
+  color: white;
+  float: left;
+  height: 80vh;
+  width: 40%;
+  overflow-y: scroll;
+}
+
+.container-hero:nth-child(odd) {
+  position: relative;
+  background-image: url(../img/moviebackground2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 445px;
+  height: 242px;
+  margin-left: 81px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.container-hero:nth-child(even) {
+  position: relative;
+  background-image: url(../img/background4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 445px;
+  height: 242px;
+  margin-left: 81px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.hero-images img {
+  position: absolute;
+  width: 219px;
+  height: 242px;
+  top: 0px;
+  border-radius: 20px;
+}
+
+.hero-button {
+  position: absolute;
+  right: 53px;
+  top: 149px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 0px;
+  height: 40px;
+  width: 141px;
+  font-size: 12px;
+  font-family: 'neuropolitical';
+}
+
+.hero-button:hover {
+  background-image: url(../img/stars.jpg);
+  background-size: cover;
+  transform: scale(1.1);
+}
+
+.hero-name {
+  position: relative;
+  width: 200px;
+  left: 244px;
+  top: 18px;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.actor-name {
+  position: relative;
+  width: 200px;
+  left: 244px;
+  top: 47px;
+  font-size: 17px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  font-family: 'neuropolitical';
+}
+
+#details {
+  height: 80vh;
+  float: left;
+  width: 40%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+#average label {
+  color: white;
+  margin-left: 10px;
+}
+
+.frmRate textarea {
+  width: 365px;
+  height: 149px;
+  margin-left: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  outline: none;
+  resize: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.comment {
+  color: white;
+}
+
+.hero-img img {
+  height: 162px;
+  width: 169px;
+  float: right;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.select-actor {
+  color: white;
+  margin-left: 70px;
+  font-size: 40px;
+}
+
+.container-descr {
+  background-color: gray;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 25px;
+}
+
+.container-descr label {
+  font-size: 25px;
+}
+
+.rate-title {
+  color: white;
+  padding: 10px;
+}
+
+.hero-descr {
+  color: white;
+  padding: 10px;
+}
+
+.hero-power {
+  color: white;
+  padding: 10px;
+}
+
+#clearfix {
+  clear: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+form.frmRate {
+  margin: 10px auto;
+}
+
+.rate {
+  float: left;
+}
+
+/* Hide radio */
+
+.rate>input[type='radio'] {
+  display: none;
+}
+
+/* Order correctly by floating highest to the right */
+
+.rate>label.lblRating {
+  float: right;
+}
+
+/* The star of the show */
+
+.rate>label.lblRating:before {
+  display: inline-block;
+  font-size: 60px;
+  padding: 5px;
+  margin: 0;
+  cursor: pointer;
+  font-family: FontAwesome;
+  content: "\f005 ";
+  /* full star */
+}
+
+/* Zero stars rating */
+
+.rate>label.lblRating:last-child:before {
+  content: "\f006 ";
+  /* empty star outline */
+}
+
+/* Half star trick */
+
+.rate label.half:before {
+  content: "\f089 ";
+  /* half star no outline */
+  position: absolute;
+  padding-right: 0;
+}
+
+/* Click + hover color */
+
+input:checked~label.lblRating, label.lblRating:hover, label.lblRating:hover~label {
+  color: yellow;
+}
+
+/* Hover highlights */
+
+input:checked+label.lblRating:hover, input:checked~label.lblRating:hover,
+/* highlight current and previous stars */
+
+input:checked~label.lblRating:hover~label.lblRating,
+/* highlight previous selected stars for new rating */
+
+label.lblRating:hover~input:checked~label.lblRating
+/* highlight previous selected stars */
+
+  {
+  color: yellow;
+}
+
+.divSubmit {
+  display: block;
+  width: 250px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.divSubmit>input[type='submit'], input[type='button'] {
+  width: 180px;
+  height: 60px;
+  font-family: anudawregular;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  outline: none;
+}
+
+.divSubmit>input[type='submit']:hover, input[type='button']:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+fieldset {
+  border: none;
+}
+
+.star {
+  color: yellow;
+  float: left;
+  height: 10px;
+}
+
+.rating-review {
+  color: black;
+}
